@@ -9,9 +9,7 @@ require_relative 'app/controllers/controller'
 #completeness (mark it as X done)
 
 command = ARGV[0]
-todo = ARGV[1..-1]
-
-todo = todo.join(" ")
+todo = ARGV[1..-1].join(" ")
 
 begin
 	case command

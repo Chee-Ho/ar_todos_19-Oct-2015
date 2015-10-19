@@ -1,9 +1,7 @@
 class Controller
 	def self.list
 		tasks = Task.all
-		tasks.each_with_index do |task,id|
-			puts "#{task.id}: #{task.description}"
-		end	
+		TaskViews.show(tasks)
 	end
 
 	def self.add(todo)
